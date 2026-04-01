@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swiggy-style HyperLocal App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div class="brand">HyperLocal</div>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#customer">Customer</a>
+        <a href="#partner">Partner</a>
+        <a href="#inventory">Inventory</a>
+      </nav>
+      <button class="signin-btn">Sign in</button>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div>
+          <p class="tagline">Swiggy-inspired marketplace experience</p>
+          <h1>Order, manage, and grow — without delivery workflow</h1>
+          <p>
+            This clone keeps the customer, partner, and inventory manager
+            experiences while excluding food delivery operations.
+          </p>
+          <div class="hero-actions">
+            <button data-role="customer">Open Customer App</button>
+            <button data-role="partner" class="outline">Open Partner Console</button>
+            <button data-role="inventory" class="outline">Open Inventory Panel</button>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>What is included</h3>
+          <ul>
+            <li>Restaurant discovery & menu browsing</li>
+            <li>Order placement and pickup-ready status</li>
+            <li>Partner onboarding and catalog management</li>
+            <li>Inventory stock, procurement, and alerts</li>
+          </ul>
+          <p class="note">No rider assignment or live delivery tracking modules.</p>
+        </div>
+      </section>
+
+      <section class="tabs" aria-label="role views">
+        <div class="tab-buttons">
+          <button class="active" data-tab="customer">Customer</button>
+          <button data-tab="partner">Partner</button>
+          <button data-tab="inventory">Inventory Manager</button>
+        </div>
+
+        <article id="customer" class="tab-panel active">
+          <h2>Customer App</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Restaurant Feed</h3>
+              <p>Browse restaurants, ratings, cuisines, and offers like Swiggy home feed.</p>
+            </div>
+            <div class="card">
+              <h3>Menu + Cart</h3>
+              <p>Add items, customize portions, and place pickup-ready orders.</p>
+            </div>
+            <div class="card">
+              <h3>Order Tracking</h3>
+              <p>Track order stages: Confirmed → Cooking → Ready for Pickup.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="partner" class="tab-panel">
+          <h2>Partner Console</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Partner Onboarding</h3>
+              <p>Upload KYC, configure outlet timings, and set tax details.</p>
+            </div>
+            <div class="card">
+              <h3>Catalog & Pricing</h3>
+              <p>Manage menu categories, item availability, and dynamic pricing.</p>
+            </div>
+            <div class="card">
+              <h3>Order Queue</h3>
+              <p>Accept orders and update prep status till customer pickup-ready.</p>
+            </div>
+          </div>
+        </article>
+
+        <article id="inventory" class="tab-panel">
+          <h2>Inventory Manager</h2>
+          <div class="cards">
+            <div class="card">
+              <h3>Stock Ledger</h3>
+              <p>Monitor ingredient-level stock and expiry for all partner outlets.</p>
+            </div>
+            <div class="card">
+              <h3>Auto-Reorder Rules</h3>
+              <p>Configure threshold-based purchase triggers and vendor mapping.</p>
+            </div>
+            <div class="card">
+              <h3>Usage Analytics</h3>
+              <p>Compare order volume vs stock burn to prevent stock-outs.</p>
+            </div>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <p>HyperLocal clone • roles: Customer, Partner, Inventory Manager</p>
+      <p>Delivery partner workflow intentionally excluded.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
